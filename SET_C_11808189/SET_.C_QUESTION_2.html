@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1
+{
+  background-color:silver;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 50px;
+  font-size:20px;
+  font-family:Calibri;
+}
+pre
+{
+	font-family:Calibri;
+	font-size:15px;
+	padding-left: 10px;
+    padding-right: 50px;
+	
+}
+input
+{font-family:Calibri;
+	font-size:15px;
+	padding-left: 10px;
+    padding-right: 50px;
+}
+select
+{
+font-family:Calibri;
+	font-size:15px;
+	padding-left:25px;
+    padding-right: 50px;
+	allign:center-left;
+}
+</style>
+</head>
+<body>
+<h1> First Steps Academy Registration Form </h1>
+
+<pre><b>All registration are received and reviewed in a first come, first serve Basis. Upon filling all open spots,
+additional submission will be added to our waiting list...</b>
+</pre>
+
+<h1>Before and Afterschool Care Registration</h1>
+<pre>
+Expected Start Date                <input type="date" name="first_name" /> <br> 
+Expected Depature Date        <input type="date" name="first_name" /> <br> 
+School Attending               	   <select name="dropdown">
+<option ></option>
+<option > hfdjhfddjsjdhjsdbb</option>
+</select>
+
+Grade Attending 			   <select name="dropdown">
+<option value=""></option>
+<option value="a"> hfdjhfddjsjdhjsdbb</option>
+</select>
+
+Pick When				   <select name="dropdown">
+<option value=""></option>
+<option value="a"> hfdjhfddjsjdhjsdbb</option>
+</select>
+
+Which Class are you		   <select name="dropdown" required>
+<option value=""></option>
+<option value="a"> hfdjhfddjsjdhjsdbb</option>
+</select>
+wanting to register for?<span style="color:red">*</span>
+
+What days of week are
+ you looking for care?<span style="color:red">*</span>          <textarea rows="5" cols="60"  name="description"> 
+ </textarea> 
+
+</pre>
+
+<h1>Student Information</h1>
+
+<pre>
+First name<span style="color:red">*</span>				   <input type="text" name="first_name" required /></br> 
+Last name<span style="color:red">*</span>				   <input type="text" name="last_name" required /> </br>
+Gender<span style="color:red">*</span> 				   <input type="radio" name="gender" value="male" required /> Male<input type="radio" name="gender" value="female"> Female</br>
+Birth Date<span style="color:red">*</span>		 		   <input type="date" name="birth_date" required /></br> 
+
+</pre>
+<input type="submit" onclick="abc()" />
+<script>
+function abc()
+{
+	var a=prompt("Name","your name");
+	document.write("The child that is now a part OF First Step family is " +a);
+}
+</script>
+
+</body>
+</html>

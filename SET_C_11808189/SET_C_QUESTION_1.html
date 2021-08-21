@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Template</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="b.css">
+</head>
+<body>
+<div class="bg">
+<h1>Tour and Travels</h1><p>Don't Quit Your Dreams</p>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="shimla.jpg" style="width:100%">
+    <div class="text">SHIMLA</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="manali.jpg" style="width:100%">
+    <div class="text">MANALI</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="ladakh.jpg" style="width:100%">
+    <div class="text">LADAKH</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<div class="row">
+  <div class="column" style="background-color:#00CC99; border-style:ridge;
+  border-radius:10px; border-width:10px;border-color:#00CC99";
+  >
+
+  <h1 style="text-align:center";></br>Enter to Book Trip</h1> </br>
+     <input type="text" name="email_address" value="*Email Address" /></br>
+	 <input type="text" name="detail" value="-How did you hear about this contest?-"/></br></br>
+	 <input type="checkbox" value="on" >Yes,please opt me into the mailing list!</br>
+	 </br></br>
+	 <input type="button" value="ENTER NOW"  /></br>
+	 <p style="text-align:center";>Free Website tools</p>
+  </div>
+  
+  
+  <div class="column" style="background-color:#3399FF; border-style:ridge;
+  border-radius:10px; border-width:10px;border-color:#3399FF";
+  >
+  <h1 style="text-align:center";> </br>CONTACT US</h1>
+  <p style="text-align:center";>We'll get back to you by email within one</br>business day.</p>
+  <pre id="a"> 
+  First Name	       Last Name
+  <input type="text" name="first_name" /> <input type="text" name="first_name" />
+  *Email Address
+  <input type="text" name="first_name" size="47"/>
+  *What is your question?
+  <textarea rows="2" cols="45">
+  </textarea>
+  </pre>
+  <p id="a1">
+ <input type="button"  value="SUBMIT" />
+  </p>
+  <p style="text-align:center";>Free Website tools</p>
+  </div>
+  
+  
+ <div class="column" style="background-color:silver; border-style:ridge;
+  border-radius:10px; border-width:10px;border-color:silver;"
+  >
+  <h1 style="text-align:center";> </br>Quick Poll</h1></br>
+  <pre>
+	Which option do you prefer?</br>
+  <input type="checkbox" value="on">Option 1</br>
+  <input type="checkbox" value="on">Option 2</br>
+  <input type="checkbox" value="on">Option 3</br>
+  </pre>
+  
+  <input type="button"  value="Vote Now" />
+  <p style="text-align:center";>Free Website tools</p>
+  
+  
+  </div>
+</div>
+
+<div class="footer">
+  <pre> Copyright © -2020 Language used HTML,CSS.
+All Rights Reserved
+Privacy
+  </pre>
+</div>
+
+</div>
+</body>
+</html>
